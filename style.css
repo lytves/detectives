@@ -1,0 +1,280 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+*:focus {
+    outline: none;
+}
+html {
+    height: 100%;
+}
+body{
+    height: 100%;
+    width: 900px;
+    margin: auto;
+    padding: 5px 20px 20px;
+    background-image: url("imagenes/bodybkg.gif");
+    background-repeat: repeat;
+    background-color: #cbbaa8;
+    font-family: Arial;
+    line-height: 1.5;
+}
+h3 {
+    color: white;
+    padding: 10px 0 20px;
+}
+a {
+    text-decoration: none;   
+}
+ul {
+    list-style-type: none;    
+}
+header{
+    text-align: left;
+    color: #d6aa63;
+    font-weight: bold;
+    font-family: Georgia;
+    font-size: 40px;
+    text-shadow: 2px 0 black;
+    margin-bottom: 10px;
+}
+nav {
+    background-color: #424142; 
+    border-radius: 6px;
+    font-family: Arial Black;
+    padding-left: 15px;
+}
+nav li {
+    display: inline-block;
+    padding: 10px 30px;
+}
+nav a {
+    color: white;
+}
+nav a.selected, nav a:hover {
+    color: #d6aa63;
+}
+.cabecera {
+    display: block;
+    background-image: url("imagenes/introbkg.png");
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-color: #cbbaa8;
+    border-radius: 6px;
+    margin: 10px 0;
+    color: #d6aa63;
+
+}
+.footer {
+    display: block;
+    overflow: auto;
+    background-color: #211008;
+    border-radius: 6px;
+    color: white;
+    padding: 10px 30px;
+    font-size: 80%;
+}
+.footer_titulos {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 120%;
+}
+.footer>li{
+    width: 33.33%;
+    float: left;
+}
+.footer_cuerpo li {
+    list-style-type: disc;
+}
+.footer_cuerpo li a {
+    text-decoration: underline;
+    color: #6a605d;
+}
+.cabecera {
+    padding: 10px 20px 10px 40px;
+    display: flex;
+}
+.descripcion {
+    width: 555px;
+    float: left;
+    padding-right: 20px;
+    padding-top: 40px;
+}
+.descripcion p {
+    padding: 10px 0;
+    font-size: 80%;
+}
+.descripcion strong {
+    text-transform: uppercase;
+}
+.costes {
+    color: black;
+    font-size: 80%;
+}
+.costes li {
+    margin-left: 40px;
+}
+.descuentos hr {
+    border: none;
+    background-color: black;
+    height: 2px;
+    margin-left: 20px;
+    width: 320px;
+}
+.logo {
+    width: 265px;
+    height: 190px;
+    float: right;
+    background-image: url("imagenes/cabecera.jpg");
+    border-radius: 6px;
+    margin: auto;
+}
+.logo_doble {
+    margin: auto;
+    width: 265px;
+}
+.clr {
+    clear: both;
+}
+.contenido {
+    background-color: white;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px;
+    height: auto;
+}
+.detective {
+    background-color: #d6aa63;
+    border-radius: 6px;
+    display: block;
+    float: left;
+    width: 19%;
+    height: 350px;
+    padding: 20px;
+    margin: 5px;
+}
+.detective_imagen img {
+    border: 10px solid #8c6163;
+    background-color: #8c6163;
+    width: 90%;
+    -moz-transition: all 1s ease-out;
+    -o-transition: all 1s ease-out;
+    -webkit-transition: all 1s ease-out;
+}
+.detective_imagen img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.detective strong {
+    font-family: arial black;
+    font-size: 120%;
+    display: inline-block;
+    line-height: 90%;
+    margin-top: 10px;
+}
+.detective_descripcion {
+    display: block; 
+    padding-top: 10px;
+    font-size: 80%;
+}
+.detective_descripcion li {
+    margin-bottom: 15px;
+}
+.forma_contacto label {
+    width: 140px;
+    margin-top: 3px;
+    display: inline-block;
+    float: left;
+    padding: 3px;
+    color: black;
+    font-size: 80%;
+}
+.forma_contacto input {
+    height: 20px;
+    width: 220px;
+    padding: 2px 5px 2px 5px;
+    margin-top: 3px;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+.forma_contacto textarea {
+    padding: 3px 5px 3px 5px;
+    width: 350px;
+    height: 100px;
+    margin-top: 3px;
+    resize: vertical;
+    max-height: 400px;
+    border-radius: 6px;
+    border: 1px solid grey;
+}
+.forma_contacto .submit {
+    margin: 0 30px 0 220px;
+}
+.forma_contacto button {
+    padding: 0 3px; 
+    border-radius: 3px;
+}
+.forma_contacto button:hover {
+    cursor: pointer;
+}
+.forma_contacto input:focus, .forma_contacto textarea:focus {
+    background: #fff;
+    border:1px solid #d6aa63;
+    box-shadow: 0 0 3px #aaa;
+}
+.asterisco {
+    color: white;
+    font-size: 80%;
+    padding: 10px 0;
+    display: block;
+}
+.contenido_contratenos {
+    background-color: #f7ebe7;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    height: auto;  
+}
+.contenido_contratenos .texto {
+    font-weight: bold;
+    margin: 10px 0;
+}
+.lista_detectives, .plaza_arrastrar {
+    border: 2px solid #d8ad6a;
+    width: 100%;
+    height: 190px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+.lista_detectives img, .plaza_arrastrar img {
+    height: 150px;
+    background-color: white;
+    margin: 10px 5px;
+    display: inline-block;
+    cursor: move;
+}
+.lista_detectives.over, .plaza_arrastrar.over { 
+    border: 2px dashed #d8ad6a;  
+}
+.contar_precio label {
+    float: none;
+    width: auto;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+.contar_precio input {
+    width: 60px;
+    margin-right: 40px;
+}
+.precio_total {
+    display: inline-block;
+    font-size: 80%;
+}
+#precio {
+    margin-left: 20px;
+}
+.nombres_detectives {
+    display: none;
+}

@@ -1,0 +1,169 @@
+<!doctype html> 
+<html lang="es"> 
+	<head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<title>Contrátenos</title> 
+		<link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="imagenes/favicon.ico" />
+        <script type="text/javascript" src="contratenos.js"></script>
+	</head> 
+	<body>
+        <header>Detectives y seguridad</header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personal.html">Nuestro personal</a></li>
+                <li><a href="tarifas.html">Tarifas</a></li>
+                <li><a href="contratenos.html" class="selected">Contrátenos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="cabecera">
+            <div class="descripcion">
+                <h3 class="titulo">Contrata desde aquí directamente nuestros servicios</h3>
+                <p><strong>siempre a su disposición, no fallamos en ninguna ocasión.</strong></p>
+            </div>
+            <div class="logo"></div>
+            <div class="clr"></div>
+        </section>
+        <section class="contenido_contratenos">
+            <div class="lista_detectives" id="lista_detectives" ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="leave(event)">
+                <img id="imagen_1" draggable="true" ondragstart="drag(event)" src="imagenes/anacleto.jpg" />
+                <img id="imagen_2" draggable="true" ondragstart="drag(event)" src="imagenes/batman.jpg" />
+                <img id="imagen_3" draggable="true" ondragstart="drag(event)" src="imagenes/botones_sacarino.jpg" />
+                <img id="imagen_4" draggable="true" ondragstart="drag(event)" src="imagenes/capitan_america.jpg" />
+                <img id="imagen_5" draggable="true" ondragstart="drag(event)" src="imagenes/capitan_trueno.jpg" />
+                <img id="imagen_6" draggable="true" ondragstart="drag(event)" src="imagenes/carpanta.jpg" />
+                <img id="imagen_7" draggable="true" ondragstart="drag(event)" src="imagenes/clouseau.jpg" />
+                <img id="imagen_8" draggable="true" ondragstart="drag(event)" src="imagenes/el_zorro.jpg" />
+                <img id="imagen_9" draggable="true" ondragstart="drag(event)" src="imagenes/filemon.gif" />
+                <img id="imagen_10" draggable="true" ondragstart="drag(event)" src="imagenes/flash_gordon.jpg" />
+                <img id="imagen_11" draggable="true" ondragstart="drag(event)" src="imagenes/goku.jpg" />
+                <img id="imagen_12" draggable="true" ondragstart="drag(event)" src="imagenes/green_arrow.png" />
+                <img id="imagen_13" draggable="true" ondragstart="drag(event)" src="imagenes/hulk.jpg" />
+                <img id="imagen_14" draggable="true" ondragstart="drag(event)" src="imagenes/ironman.gif" />
+                <img id="imagen_15" draggable="true" ondragstart="drag(event)" src="imagenes/linterna_verde.jpg" />
+                <img id="imagen_16" draggable="true" ondragstart="drag(event)" src="imagenes/mortadelo.gif" />
+                <img id="imagen_17" draggable="true" ondragstart="drag(event)" src="imagenes/ofelia.jpg" />
+                <img id="imagen_18" draggable="true" ondragstart="drag(event)" src="imagenes/pepe_gotera_otilio.png" />
+                <img id="imagen_19" draggable="true" ondragstart="drag(event)" src="imagenes/robin.jpg" />
+                <img id="imagen_20" draggable="true" ondragstart="drag(event)" src="imagenes/rompetechos.jpg" />
+                <img id="imagen_21" draggable="true" ondragstart="drag(event)" src="imagenes/spiderman.jpg" />
+                <img id="imagen_22" draggable="true" ondragstart="drag(event)" src="imagenes/superlopez.jpg" />
+                <img id="imagen_23" draggable="true" ondragstart="drag(event)" src="imagenes/superman.jpg" />
+                <img id="imagen_24" draggable="true" ondragstart="drag(event)" src="imagenes/thor.jpg" />
+                <img id="imagen_25" draggable="true" ondragstart="drag(event)" src="imagenes/tintin.jpg" />
+                <img id="imagen_26" draggable="true" ondragstart="drag(event)" src="imagenes/zipi_zape.jpg" />
+            </div>
+            <div class="texto">Arrastra tu selección y elige los detalles:</div>
+            <div class="plaza_arrastrar" id="plaza_arrastrar"  ondrop="drop(event)" ondragover="allowDrop(event)" ondragleave="leave(event)">
+            </div>
+            <div class="forma_contacto" style="margin-top: 20px;">
+                <form class="forma_contacto" action="#" method="post" name="forma_contacto" id="forma_contacto">
+                    <ul>
+                        <li>
+                            <div class="contar_precio">
+                                <label for="dias">Días:</label>
+                                <input id="dias" name="dias" type="number" min="1" value="1" autocomplete="off" onchange="contar()" required />
+                                <label for="agentes">Agentes:</label>
+                                <input id="agentes" name="agentes" type="text" min="0" value="0" autocomplete="off" readonly required />
+                                <div class="precio_total">Presupuesto total:
+                                    <span id="precio">0</span> €
+                                </div>
+                                <div class="nombres_detectives">
+                                    <select id="detectives" name="detectives[]" multiple hidden required autocomplete="off">
+                                        <option value="Anacleto"></option>
+                                        <option value="Batman"></option>
+                                        <option value="El botones sacarino"></option>
+                                        <option value="Capitán America"></option>
+                                        <option value="Capitán Trueno"></option>
+                                        <option value="Carpanta"></option>
+                                        <option value="Inspector Clouseau"></option>
+                                        <option value="El Zorro"></option>
+                                        <option value="Filemón"></option>
+                                        <option value="Flash Gordon"></option>
+                                        <option value="Goku"></option>
+                                        <option value="Green Arrow"></option>
+                                        <option value="Hulk"></option>
+                                        <option value="Ironman"></option>
+                                        <option value="Linterna Verde"></option>
+                                        <option value="Mortadelo"></option>
+                                        <option value="Ofelia"></option>
+                                        <option value="Pepe Gotera y Otilio"></option>
+                                        <option value="Robin"></option>
+                                        <option value="Rompetechos"></option>
+                                        <option value="Spiderman"></option>
+                                        <option value="Super López"></option>
+                                        <option value="Superman"></option>
+                                        <option value="Thor"></option>
+                                        <option value="Tin tin"></option>
+                                        <option value="Zipi y Zape"></option>
+                                    </select>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <label for="nombre">Nombre *</label>  
+                            <input type="text" id="nombre" name="nombre" required />
+                        </li>
+                        <li>
+                            <label for="apellidos">Apellidos *</label>  
+                            <input type="text" id="apellidos" name="apellidos" required />
+                        </li>
+                        <li>
+                            <label for="email">Correo electrónico *</label>  
+                            <input type="email" id="email" name="email" required />
+                        </li>
+                        <li>
+                            <label for="telefono">Teléfono</label>  
+                            <input type="tel" id="telefono" name="telefono" />
+                        </li>
+                        <li>
+                            <label for="comentarios">Comentarios *</label>  
+                            <textarea id="comentarios" name="comentarios" cols="60" rows="6" required></textarea>
+                        </li>
+                        <li>
+                            <button class="submit" type="submit">Contratar</button>
+                            <button class="limpiar" type="reset" onclick="limpiarForma()">Limpiar</button>
+                        </li>
+                    </ul>
+                    </form>
+                <span class="asterisco" style="color: black;">Los campos marcados con * son obligatorios</span>
+            </div>
+        </section>
+        <footer>
+            <ul class="footer">
+                <li>
+                    <div class="footer_titulos">Casos de éxito</div>
+                    <div class="footer_cuerpo">
+                        <ul>
+                            <li><a href="#">La Familia Real (de Montray)</a></li>
+                            <li><a href="#">Ala Cárcel Bes</a></li>
+                            <li><a href="#">La empresa Demitío</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer_titulos">En prensa</div>
+                    <div class="footer_cuerpo">
+                        <ul>
+                            <li><a href="#">Salvados por la Enterna</a></li>
+                            <li><a href="#">Dios mío, por fin me libré de ellos</a></li>
+                            <li><a href="#">Una y no más, santo Tomás</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer_titulos">¿Dónde estamos?</div>
+                    <div>
+                        <ul>
+                            <li>Nos encontrara en la Rue del Percebe, 13.</li>
+                            <li>78095 - Villarriba de los cominos.</li>
+                            <li>ESPAIN</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+<!doctype html> 
+<html lang="es"> 
+	<head> 
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+		<title>Contacto</title> 
+		<link href="style.css" rel="stylesheet" type="text/css" />
+        <link rel="icon" href="imagenes/favicon.ico" />
+	</head> 
+	<body>
+        <header>Detectives y seguridad</header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="personal.html">Nuestro personal</a></li>
+                <li><a href="tarifas.html">Tarifas</a></li>
+                <li><a href="contratenos.html">Contrátenos</a></li>
+                <li><a href="contacto.html" class="selected">Contacto</a></li>
+            </ul>
+        </nav>
+        <section class="cabecera">
+            <div class="descripcion">
+                <h3 class="titulo">Dejanos tus datos de contacto</h3>
+                    <form class="forma_contacto" action="#" method="post" name="forma_contacto">
+                    <ul>
+                        <li>
+                            <label for="nombre">Nombre *</label>  
+                            <input type="text" id="nombre" name="nombre" required />
+                        </li>
+                        <li>
+                            <label for="apellidos">Apellidos *</label>  
+                            <input type="text" id="apellidos" name="apellidos" required />
+                        </li>
+                        <li>
+                            <label for="email">Correo electrónico *</label>  
+                            <input type="email" id="email" name="email" required />
+                        </li>
+                        <li>
+                            <label for="telefono">Teléfono</label>  
+                            <input type="tel" id="telefono" name="telefono" />
+                        </li>
+                        <li>
+                            <label for="comentarios">Comentarios *</label>  
+                            <textarea id="comentarios" name="comentarios" required></textarea>
+                        </li>
+                        <li>
+                            <button class="submit" type="submit">Enviar</button>
+                            <button class="limpiar" type="reset">Limpiar</button>
+                        </li>
+                    </ul>
+                    </form>
+                <span class="asterisco">Los campos marcados con * son obligatorios</span>
+            </div>
+            <div class="logo"></div>
+            <div class="clr"></div>
+        </section>
+        <footer>
+            <ul class="footer">
+                <li>
+                    <div class="footer_titulos">Casos de éxito</div>
+                    <div class="footer_cuerpo">
+                        <ul>
+                            <li><a href="#">La Familia Real (de Montray)</a></li>
+                            <li><a href="#">Ala Cárcel Bes</a></li>
+                            <li><a href="#">La empresa Demitío</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer_titulos">En prensa</div>
+                    <div class="footer_cuerpo">
+                        <ul>
+                            <li><a href="#">Salvados por la Enterna</a></li>
+                            <li><a href="#">Dios mío, por fin me libré de ellos</a></li>
+                            <li><a href="#">Una y no más, santo Tomás</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="footer_titulos">¿Dónde estamos?</div>
+                    <div>
+                        <ul>
+                            <li>Nos encontrara en la Rue del Percebe, 13.</li>
+                            <li>78095 - Villarriba de los cominos.</li>
+                            <li>ESPAIN</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </footer>
+    </body>
+</html>
