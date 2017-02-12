@@ -87,6 +87,7 @@ function contar() {
 function limpiarForma() {
   document.getElementById("dias").value = 1;
   document.getElementById("precio").innerHTML = "0";
+  document.getElementById("lista_detectives").innerHTML += document.getElementById("plaza_arrastrar").innerHTML;
   document.getElementById("plaza_arrastrar").innerHTML = "";
   
 }
