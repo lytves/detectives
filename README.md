@@ -5,6 +5,6 @@ Español: Es una página web simple con Formularios HTML5 y con uso de Drag-and-
 
 Русский: Простой веб-ресурс с примером использования HTML5 функций перетаскивания Drag-and-drop и HTML5 формами
 
-https://lytves.github.io/detectives/
+**DEMO:** https://lytves.github.io/detectives/
 
 ![alt tag](https://github.com/lytves/detectives/blob/master/detectives.jpg)
